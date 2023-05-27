@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.nav {
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    background-color: aqua;
+    align-items: center;
+    padding: 0 16px;
+}
+
+.logo {
+    width: 200px;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+}
+
+li {
+    list-style: none;
+    padding-left: 16px;
+}
+
+a {
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* // ABOUT // */
+
+.header {
+    height: calc(100vh - 70);
+    background-color: rgb(236, 198, 236);
+    display: flex;
+    padding: 24px;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 62px;
+}
+
+.head-text {
+    font-size: 24px;
+    margin: 16px 0 24px 0;
+}
+
+button {
+    background-color: aqua;
+    border: none;
+    color: black;
+    padding: 8px 16px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.row {
+    width: 100%;
+    max-width: 1300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* // ABOUT // */
+
+#about {
+    background-color: cornsilk;
+    height: 500px;
+    padding: 48px 0;
+
+}
+
+h2 {
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 24px;
+
+}
+
+.about-description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about__image--wrapper {
+    width: 40%;
+    padding: 0 24px;
+}
+
+img {
+    width: 100%;
+}
+
+.text-description {
+    width: 60%;
+    padding: 0 24px;
+}
+
+.para {
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 24px;
+}
+
+
+/* // discord // */
+
+#discord {
+    background-color: aqua;
+    height: 500px;
+    padding: 48px 0;
+}
+
+.discord-description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* // course // */
+
+#course {
+    background-color: antiquewhite;
+    height: 500px;
+    padding: 48px 0;
+}
+
+.course-description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* ///  contact /// */
+
+#contact {
+    background-color: plum;
+    padding: 24px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+textarea {
+    padding: 14px;
+    font-size: 20px;
+}
+
+
+
+input {
+    margin-bottom: 24px;
+    padding: 14px;
+    font-size: 20px;
+}
+
+
+.btw {
+
+    margin-top: 20px;
+}
+
+
+/* /// footer /// */
+
+
+
+footer {
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 24px;
+}
+
+.footer-logo {
+    max-width: 480px;
+}
+
+.footer-links {
+    margin-bottom: 32px;
+}
+
+.footer-link {
+    padding: 0 16px;
+}
+
+@media (max-width : 768px) {
+    .row {
+        flex-direction: column;
+    }
+
+    .header-text {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 24px;
+        align-items: center;
+    }
+
+    .header__text--button {
+        max-width: 240px;
+    }
+
+    h1 {
+        font-size: 60px;
+        text-align: center;
+    }
+
+    .head-text {
+        text-align: center;
+        font-size: 28px;
+
+    }
+
+    ul {
+        display: none;
+    }
+
+    #about,#discord,#course {
+        height: 900px;
+    }
+
+    .about-description {
+        flex-direction: column;
+    }
+
+    .text-description {
+        width: 100%;
+    }
+
+    .about__image--wrapper {
+        width: 100%;
+    }
+
+    .discord-description {
+        flex-direction: column;
+    }
+
+    .course-description {
+        flex-direction: column;
+    }
+
+    footer {
+        padding: 48px 24px;
+    }
+
+    .footer-logo{
+        max-width: 360px;
+    }
+
+    .footer-link{
+        padding: 0 4px;
+        font-size: 18px;
+    }
+
+    .footer-links{
+        margin-bottom: 24px;
+    }
+}
+
